@@ -810,6 +810,12 @@ p {
     cursor: pointer;
 }
 
+.contact-form select option,
+.apply-form select option {
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
 /* Globe Container */
 .contact-globe-container {
     display: flex;
@@ -1092,7 +1098,9 @@ p {
     .form-card {
         padding: 1.5rem;
     }
-}/* --- Careers Page Styles --- */
+}
+
+/* --- Careers Page Styles --- */
 .careers-hero {
     padding-top: 14rem;
     padding-bottom: 6rem;
@@ -1283,6 +1291,7 @@ body.light-theme .job-tag {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
+
 /* Application Modal Styles */
 .modal-overlay {
     position: fixed;
