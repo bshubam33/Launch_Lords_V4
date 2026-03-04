@@ -63,9 +63,67 @@ body.light-theme .globe-vignette {
     box-shadow: inset -20px -20px 50px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(13, 148, 136, 0.1) !important;
 }
 
-body.light-theme #themeToggle:hover {
-    border-color: var(--accent-gold);
-    color: var(--accent-gold);
+body.light-theme .theme-toggle-fab {
+    background: var(--text-main);
+    color: var(--bg-main);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+body.light-theme .theme-toggle-fab:hover {
+    background: var(--accent-gold);
+    transform: translateY(-3px) scale(1.05);
+}
+
+body.light-theme .theme-toggle-fab .sun-icon {
+    display: none;
+}
+
+body.light-theme .theme-toggle-fab .moon-icon {
+    display: block;
+}
+
+/* Floating Theme Toggle Box */
+.theme-toggle-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--accent-gold);
+    color: var(--bg-main);
+    border: none;
+    box-shadow: 0 4px 20px rgba(212, 184, 134, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.theme-toggle-fab:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(212, 184, 134, 0.6);
+    background: var(--accent-gold-hover);
+}
+
+.theme-toggle-fab svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle-fab .sun-icon {
+    display: block;
+}
+
+.theme-toggle-fab .moon-icon {
+    display: none;
+}
+
+.theme-toggle-fab:hover svg {
+    transform: rotate(30deg);
 }
 
 * {
