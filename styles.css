@@ -769,6 +769,30 @@ p {
     margin: 0;
 }
 
+.footer-bottom-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+a.footer-link {
+    color: var(--text-muted) !important;
+    text-decoration: none !important;
+    transition: var(--transition);
+}
+
+a.footer-link:hover {
+    color: var(--text-main) !important;
+}
+
+.footer-dot {
+    color: var(--border-color);
+}
+
 /* --- Animations (Handled by JS classes) --- */
 .anim-slab {
     opacity: 0;
